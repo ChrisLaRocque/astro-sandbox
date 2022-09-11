@@ -3,7 +3,7 @@ import "../styles/fonts.css";
 export interface Props {
   title: string;
   description: string;
-  imageURL: string;
+  imageURL?: string;
 }
 
 const { title, description, imageURL } = Astro.props;
@@ -63,7 +63,7 @@ const { title, description, imageURL } = Astro.props;
         font-size: var(--font-size-xl);
       }
       h2 {
-        font-size: var(--font-size-lg);
+        font-size: var(--font-size-base);
       }
 
       code {
